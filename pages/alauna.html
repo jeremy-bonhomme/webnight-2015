@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" class="Exposition">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="Integration" content="width=device-width">
+	<title>Exposition</title>
+	<link rel="stylesheet" type="text/css" href="../style-turquoise.css" />
+</head>
+<body>
+	<div class="content">
+		<nav>
+			<ul class="scroll">
+				<li><a href="../index.html"><h3>Accueil</h3></a></li>
+				<li><a href="#presentation"><h3>Présentation</h3></a></li>
+				<li><a href="#informations"><h3>Infos</h3></a></li>
+				<li><a href="#galerie"><h3>Galerie</h3></a></li>
+			</ul>
+		</nav>
+		<article id="presentation" class="content alaunapres">
+			<section class="title violine">
+				<div class="wrapper-title">
+					<h1>Alauna 21</h1>
+					<h2>Théâtre de Secondigny</h2>
+				</div>
+			</section>
+		</article>
+		<article id="informations" class="content alaunainfo">
+			<section class="info">
+				<div class="wrapper">
+					<p>L'architecture de la salle Alauna 21 est simple, et rappelle l'architecture de certains bâtiments agricoles locaux. Un grand toit à deux pentes, largement débordant de plus de 8 mètres, abrite la salle. La structure du bâtiment est constituée de fermes métalliques.</p> 
+		                <p>Les façades sont habillées de planches de bois brut non rabotées posées verticalement et goudronnées comme l’étaient jadis les barques du marais. Toutes les menuiseries sont en bois clair lasuré. 
+		La salle s’ouvre sur le paysage de manière traversante par deux grandes baies coulissantes.</p>
+				</div>
+			</section>
+		</article>
+		<article id="galerie" class="content alaunagal">
+			<h2 class="gall">Quelques chiffres</h2>
+			<section id="menu-losange" class="menu ch-grid">
+				<div id="block1" class="block">
+					<div class="losange">
+						<img src="../img/alauna/Alauna-4.jpg" alt="" />
+					</div>
+					<div  class="losange ch-item contour">
+						<div class="wrap-losange">
+							<h2>Places</h2>
+							<div class="ch-info">
+								<h3>520 places</h3>						
+							</div>
+						</div>
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Architectes</h2>
+							<div class="ch-info">
+								<h3>Hervé Beaudouin</h3>
+								<p>et</p>
+								<h3>Engel</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="block2" class="block">
+					<div id="losange4" class="losange">
+						<img src="../img/alauna/Alauna-3.jpg" alt="" />
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Surface</h2>
+							<div class="ch-info">
+								<h3>953 mètres carré</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/alauna/Alauna.jpg" alt=""/>
+					</div>
+				</div>
+				<div id="block3" class="block">
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Date</h2>
+							<div class="ch-info">
+								<h3>Date de début</h3>
+								<p>2004</p>
+								<h3>Date de fin</h3>
+								<p>2006</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange contour ch-item">
+						<div class="wrap-losange">
+							<h2>Coût</h2>
+							<div class="ch-info">
+								<h3>1 208 000 M € HT</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/alauna/Alaun.jpg" alt=""/>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('.scroll a').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+    </script>
+</body>

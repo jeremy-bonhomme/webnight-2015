@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@charset "utf-8";
+/* CSS Document */
+body,div
+{
+	margin: 0;
+	padding: 0;
+}
+/*==================NAV=====================*/
+html {
+	margin:0;
+	padding:0;
+	background: url(img/nb.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+}
+
+body{
+	font-family: 'Avenir LT Std' sans-serif;
+}
+.content{
+	width: 100%;
+}
+#menu-losange
+{
+	width: 960px;
+	min-height: 500px;
+	margin: 0 auto;
+	padding-left: 25%;
+}
+
+.losange
+{
+	float:left;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.bleu, .vert, .rouge {
+	position:absolute;
+	z-index: 5;
+	top:0;
+	width: 150px;
+	height: 150px;
+	transition-duration:0.5s;
+}
+
+.bleu {
+    background-color: #0070a2;
+}
+
+.vert {
+    background-color: #1a9795;
+}
+
+.rouge {
+	background-color: #a10149;
+}
+
+.bleu:hover, .vert:hover, .rouge:hover {
+	opacity:0.4;
+	transition-duration:0.5s;
+}
+
+.block
+{
+	width:150px;
+	height: 600px;
+	display: inline-block;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+#losange1 img{
+	height: 300px;
+	width: 300px;
+	margin: 0;
+	position: relative;
+	top:-100px;
+	left: -52px;
+	display: block;
+	z-index:0;
+}
+
+#losange2 img,
+#losange3 img,
+#losange5 img,
+#losange6 img,
+#losange7 img,
+#losange8 img {
+	height: 300px;
+	width: 300px;
+	margin: 0;
+	position: relative;
+	top:-50px;
+	left: -50px;
+	display: block;
+}
+
+
+#losange9 img {
+	height: 300px;
+	width: 300px;
+	margin: 0;
+	position: relative;
+	top:-70px;
+	left: -40px;
+	display: block;
+}
+
+#losange4 img {
+	height: 300px;
+	width: 300px;
+	margin: 0;
+	position: relative;
+	top:-95px;
+	left: -50px;
+	display: block;
+	z-index:0;
+}
+
+.block .losange:nth-child(2){
+    background-color: #1a9795;
+    position:relative;
+	z-index:2;
+}
+
+.block .losange:nth-child(3){
+    background-color: #a10149;
+    position:relative;
+	z-index:2;
+}
+
+.block .losange:nth-child(1){
+	background-color: #0070a2;
+    position:relative;
+	z-index:2;
+}
+
+.block:nth-child(2)
+{
+	margin: 0px 57px;
+}
+
+.losange h2 {
+	font-size: 1em;
+	font-family: 'ITC Officina Sans Std' sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	text-align: center;
+	z-index: 100;
+	top: 50%;
+	left: -20.5%;
+	right: -20.5%;
+	-webkit-transform: rotate(-45deg);
+	transform: translateY(-50%) rotate(-45deg) translateY(-60%);
+	pointer-events: none;
+}
+
+.wrap {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.losange a {
+	position: absolute;
+	z-index: 40;
+	top: 160px;
+	left: 145px;
+	transform: rotate(-45deg);
+	height: auto;
+	padding: 8px;
+	text-decoration: none;
+	color: #FFF;
+	background-color: transparent;
+	border: 1px solid #FFF;
+	transition: all .7s ease;
+}
+
+.bleu2:hover {
+	color:#0070a2;
+	background: #FFF;
+}
+
+.vert2:hover {
+	color:#1a9795;
+	background: #FFF;
+}
+
+.rouge2:hover {
+	color:#a10149;
+	background: #FFF;
+}
+
+.woody:hover a {
+	top: 90px;
+	left: 75px;
+	transition: all .7s ease;
+}
+
+.woody {
+	position:absolute;
+	z-index: 5;
+	top:0;
+	width: 150px;
+	height: 150px;
+	transition: all .7s ease;
+}
+.description{background-color: rgba(0,0,0,0.4);width:100%;padding:20px 0;  position: relative;
+  margin-top: -100px;}
+.description h1{text-align: center;color:#FFF;font-size: 3em;margin-bottom:20px;}
+.description p{text-align: center;color:#FFF;width:80%;margin:0 auto;line-height: 1.3em;}
+footer{
+	background-color: #131313;
+	height: 40px;
+	bottom: 0;
+	width: 100%;
+}
+footer ul{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
+}
+footer li{display: inline-block; margin-right: 30px;}
+footer a {text-decoration: none;color:#999;transition: all .7s ease;}
+footer a:hover {text-decoration: none;color:#FFF;transition: all .7s ease;}

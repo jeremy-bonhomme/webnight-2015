@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr" class="Exposition">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="Integration" content="width=device-width">
+	<title>Exposition</title>
+	<link rel="stylesheet" type="text/css" href="../style-green.css" />
+</head>
+<body>
+	<div class="content">
+		<nav>
+			<ul class="scroll">
+				<li><a href="../index.html"><h3>Accueil</h3></a></li>
+				<li><a href="#presentation"><h3>Présentation</h3></a></li>
+				<li><a href="#informations"><h3>Infos</h3></a></li>
+				<li><a href="#galerie"><h3>Galerie</h3></a></li>
+			</ul>
+		</nav>
+		<article id="presentation" class="content galliapres">
+			<section class="title emeraude">
+				<div class="wrapper-title">
+					<h1>Le Gallia</h1>
+					<h2>Saintes</h2>
+				</div>
+			</section>
+		</article>
+		<article id="informations" class="content galliamain">
+			<section class="info">
+				<div class="wrapper">
+					<p>Construit en 1852 dans la tradition des théâtres à l’Italienne, le Gallia se tient en plein coeur du centre historique de Saintes. La rencontre entre un programme contemporain et ce patrimoine était l’occasion de produire une modernité nourrie des traces d’un passé collectif. Seule la façade d’époque, ornée de statues sur son fronton et d’une terrasse en balcon, est conservée. À l’intérieur, la salle de spectacle accomplit une synthèse entre la convivialité des salles « à l’italienne » grâce à une série de loges en balcon et la qualité de vision des salles frontales contemporaines.</p>
+				</div>
+			</section>
+		</article>
+		<article id="galerie" class="content galliathird">
+			<h2 class="gall">Quelques chiffres</h2>
+			<section id="menu-losange" class="menu ch-grid">
+				<div id="block1" class="block">
+					<div class="losange">
+						<img src="../img/gallia/Gallia.jpg" alt="" />
+					</div>
+					<div  class="losange ch-item contour">
+						<div class="wrap-losange">
+							<h2>Places</h2>
+							<div class="ch-info">
+								<h3>Grande salle</h3>
+								<p>422 places</p>
+								<h3>Petite salle</h3>
+								<p>98 places</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Architectes</h2>
+							<div class="ch-info">
+								<h3>Agence Babel</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="block2" class="block">
+					<div id="losange4" class="losange">
+						<img src="../img/gallia/Gallia.jpg" alt="" />
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Surface</h2>
+							<div class="ch-info">
+								<h3>1600 m²</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/gallia/Gallia-5.jpg" alt=""/>
+					</div>
+				</div>
+				<div id="block3" class="block">
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Date</h2>
+							<div class="ch-info">
+								<h3>Commande</h3>
+								<p>1998</p>
+								<h3>Durée du chantier</h3>
+								<p>2001 à 2003</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange contour ch-item ">
+						<div class="wrap-losange">
+							<h2>Coût</h2>
+							<div class="ch-info">
+								<h3>795 000 M € HT (valeur 2004)</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/gallia/Gallia-5.jpg" alt=""/>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('.scroll a').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+    </script>
+</body>

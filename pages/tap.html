@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr" class="Exposition">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="Integration" content="width=device-width">
+	<title>Exposition</title>
+	<link rel="stylesheet" type="text/css" href="../style-rose.css" />
+</head>
+<body>
+	<div class="content">
+		<nav>
+			<ul class="scroll">
+				<li><a href="../index.html"><h3>Accueil</h3></a></li>
+				<li><a href="#presentation"><h3>Présentation</h3></a></li>
+				<li><a href="#informations"><h3>Infos</h3></a></li>
+				<li><a href="#galerie"><h3>Galerie</h3></a></li>
+			</ul>
+		</nav>
+		<article id="presentation" class="content tappresentation">
+			<section class="title violine">
+				<div class="wrapper-title">
+					<h1>TAP</h1>
+					<h2>Théâtre Auditorium Poitiers</h2>
+				</div>
+			</section>
+		</article>
+		<article id="informations" class="content tapinfos">
+			<section class="info">
+				<div class="wrapper">
+					<p>Installé au bord du plateau de la ville ancienne, le TAP domine la vallée. Sa modernité installe un lien entre la ville basse et sa gare TGV et la ville haute, historique. </p>
+					<p>La conception est simple : un socle épais, habité par les locaux de service et le parking, assure la continuité du mur de soutènement qui longe la rue montante. Sur ce socle, les deux boîtes de verre expriment la présence des deux entités : le théâtre et l’auditorium. Les deux volumes sont complétés par des locaux de service, trois salles de répétitions pouvant servir de lieux de spectacles et un studio d’enregistrement. Les loges s’ouvrent sur un patio creusé dans le socle.  La livraison des décors se fait par une salle souterraine pouvant accueillir d’importants poids lourds. </p>
+				</div>
+			</section>
+		</article>
+		<article id="galerie" class="content tapdata">
+			<h2 class="gall">Quelques chiffres</h2>
+			<section id="menu-losange" class="menu ch-grid">
+				<div id="block1" class="block">
+					<div class="losange">
+						<img src="../img/tap/TAP5.jpg" alt="" />
+					</div>
+					<div  class="losange ch-item contour">
+						<div class="wrap-losange">
+							<h2>Places</h2>
+							<div class="ch-info">
+								<h3>Auditorium</h3>
+								<p>1 020 places</p>
+								<h3>Théâtre</h3>
+								<p>722 places</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Architectes</h2>
+							<div class="ch-info">
+								<h3>Joao Luis</h3>
+								<h3>Hervé Beaudouin</h3>
+								<h3>Benoit Engel</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="block2" class="block">
+					<div id="losange4" class="losange">
+						<img src="../img/tap/tap2.jpg" alt="" />
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Surface</h2>
+							<div class="ch-info">
+								<h3>16000 m2</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/tap/TAP4.jpg" alt=""/>
+					</div>
+				</div>
+				<div id="block3" class="block">
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Date</h2>
+							<div class="ch-info">
+								<h3>Date de commande</h3>
+								<p>2001</p>
+								<h3>Date de début/fin</h3>
+								<p>2004/2008</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange contour ch-item">
+						<div class="wrap-losange">
+							<h2>Coût</h2>
+							<div class="ch-info">
+								<h3>Montant des travaux</h3>
+								<p>45 M € HT</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/tap/TAP3.jpg" alt=""/>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('.scroll a').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+    </script>
+</body>

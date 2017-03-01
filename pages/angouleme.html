@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" class="Exposition">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="Integration" content="width=device-width">
+	<title>Exposition</title>
+	<link rel="stylesheet" type="text/css" href="../style-green.css" />
+</head>
+<body>
+	<div class="content">
+		<nav>
+			<ul class="scroll">
+				<li><a href="../index.html"><h3>Accueil</h3></a></li>
+				<li><a href="#presentation"><h3>Présentation</h3></a></li>
+				<li><a href="#informations"><h3>Infos</h3></a></li>
+				<li><a href="#galerie"><h3>Galerie</h3></a></li>
+			</ul>
+		</nav>
+		<article id="presentation" class="content angoulpres">
+			<section class="title emeraude">
+				<div class="wrapper-title">
+					<h1>Théâtre</h1> 
+					<h2>d'Angoulême</h2>
+				</div>
+			</section>
+		</article>
+		<article id="informations" class="content angoulmain">
+			<section class="info">
+				<div class="wrapper">
+					<p>L’édifice actuel est une requalification du théâtre construit par Antoine Soudée en 1870. Le hall a été dépouillé de ses volumes existants intérieurs. Le public perçoit le cylindre incliné abritant la grande salle. Ce volume brillant, carrossé de panneaux de tôle en cuivre ou en acier bruni et verni, finement perforé, reflète un éclairage étudié pour le mettre en scène. Les différents accès à la grande salle, traités en passerelles légères, établissent cette transition entre l’espace public et celui de la représentation. La pierre des murs joue avec un aménagement contemporain. Elle établit entre l'architecture nouvelle et l’enveloppe classique un dialogue qui est celui des grands monuments publics rénovés.</p>
+				</div>
+			</section>
+		</article>
+		<article id="galerie" class="content angoulthird">
+			<h2 class="gall">Quelques chiffres</h2>
+			<section id="menu-losange" class="menu ch-grid">
+				<div id="block1" class="block">
+					<div class="losange">
+						<img src="../img/angouleme/AC.jpg" alt="" />
+					</div>
+					<div  class="losange ch-item contour">
+						<div class="wrap-losange">
+							<h2>Places</h2>
+							<div class="ch-info">
+								<h3>722 places</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Architectes</h2>
+							<div class="ch-info">
+								<h3>Valentin Fabre</h3>
+		                            <h3>et Jean Perrottet</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="block2" class="block">
+					<div id="losange4" class="losange">
+						<img src="../img/angouleme/AC2.jpg" alt="" />
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Surface</h2>
+							<div class="ch-info">
+								<h3>3619 m²</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/angouleme/AC5.jpg" alt=""/>
+					</div>
+				</div>
+				<div id="block3" class="block">
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Date</h2>
+							<div class="ch-info">
+								<h3>Commande</h3>
+								<p>1994</p>
+								<h3>Durée du chantier</h3>
+								<p>1995 à 1996</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange contour ch-item ">
+						<div class="wrap-losange">
+							<h2>Coût</h2>
+							<div class="ch-info">
+								<h3>51 M Francs HT (valeur 2007)</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/angouleme/AC4.jpg" alt=""/>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('.scroll a').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+    </script>
+</body>

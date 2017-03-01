@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" class="Exposition">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="Integration" content="width=device-width">
+	<title>Exposition</title>
+	<link rel="stylesheet" type="text/css" href="../style-rose.css" />
+</head>
+<body>
+	<div class="content">
+		<nav>
+			<ul class="scroll">
+				<li><a href="../index.html"><h3>Accueil</h3></a></li>
+				<li><a href="#presentation"><h3>Présentation</h3></a></li>
+				<li><a href="#informations"><h3>Infos</h3></a></li>
+				<li><a href="#galerie"><h3>Galerie</h3></a></li>
+			</ul>
+		</nav>
+		<article id="presentation" class="content bresspresentation">
+			<section class="title violine">
+				<div class="wrapper-title">
+					<h1>Bressuire</h1>
+					<h2>Espace spectacle vivant</h2>
+				</div>
+			</section>
+		</article>
+		<article id="informations" class="content bressinfos">
+			<section class="info">
+				<div class="wrapper">
+					<p>Ce théâtre s’intègre en douceur au contexte urbain par sa volumétrie, tandis que ses façades revendiquent leur modernité pour souligner son statut d’édifice public dédié à la culture. 
+		Ouverte sur la ville, la façade vitrée du hall d’accueil est couronnée d’un volume ondoyant qui enchâsse la salle et la cage de scène d’une peau dont la forme et la teinte jouent avec les couleurs du temps. Elle est réalisée en tôle d’aluminium thermolaqué rouge carmin, fixée sur les voiles béton. La mise en œuvre forme des bandes « souples » avec des courbures alternées. 
+		D’un agencement résolument contemporain, la salle peut accueillir 348 places. </p>
+				</div>
+			</section>
+		</article>
+		<article id="galerie" class="content bressdata">
+			<h2 class="gall">Quelques chiffres</h2>
+			<section id="menu-losange" class="menu ch-grid">
+				<div id="block1" class="block">
+					<div class="losange">
+						<img src="../img/bressuire/bressuire4.jpg" alt="" />
+					</div>
+					<div  class="losange ch-item contour">
+						<div class="wrap-losange">
+							<h2>Places</h2>
+							<div class="ch-info">
+								<h3>Théâtre</h3>
+								<p>348 places</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Architectes</h2>
+							<div class="ch-info">
+								<h3>Archidev</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="block2" class="block">
+					<div id="losange4" class="losange">
+						<img src="../img/bressuire/bressuire1.jpg" alt="" />
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Surface</h2>
+							<div class="ch-info">
+								<h3>1350 m2</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/bressuire/bressuire3.jpg" alt=""/>
+					</div>
+				</div>
+				<div id="block3" class="block">
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Date</h2>
+							<div class="ch-info">
+								<h3>Date de commande</h3>
+								<p>2002</p>
+								<h3>Date de début/fin</h3>
+								<p>2010/2011</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange contour ch-item">
+						<div class="wrap-losange">
+							<h2>Coût</h2>
+							<div class="ch-info">
+								<h3>Montant des travaux</h3>
+								<p>3.2 M € HT</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/bressuire/bressuire5.jpg" alt=""/>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('.scroll a').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+    </script>
+</body>

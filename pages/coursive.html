@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr" class="Exposition">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="Integration" content="width=device-width">
+	<title>Exposition</title>
+	<link rel="stylesheet" type="text/css" href="../style-green.css" />
+</head>
+<body>
+	<div class="content">
+		<nav>
+			<ul class="scroll">
+				<li><a href="../index.html"><h3>Accueil</h3></a></li>
+				<li><a href="#presentation"><h3>Présentation</h3></a></li>
+				<li><a href="#informations"><h3>Infos</h3></a></li>
+				<li><a href="#galerie"><h3>Galerie</h3></a></li>
+			</ul>
+		</nav>
+		<article id="presentation" class="content coursivepres">
+			<section class="title emeraude">
+				<div class="wrapper-title">
+					<h1>La Coursive</h1>
+					<h2>La Rochelle</h2>
+				</div>
+			</section>
+		</article>
+		<article id="informations" class="content coursivemain">
+			<section class="info">
+				<div class="wrapper">
+					<p>Le théâtre Verdière est une extension de La Coursive, la Scène Nationale de La Rochelle. 
+		La suture entre les deux bâtiments existants est assurée par une grande simplicité de volume et de formes, dans le respect des hauteurs existantes. En verre et béton, la partie supérieure de l'extension donne une impression de profondeur et rompt avec le minéral des deux anciens bâtiments. La salle, boîte suspendue, s'identifie par une couleur vive. Une maille inox enveloppe le nouveau bâtiment. La couverture est réalisée en ardoise dans l’existant, permettant dans le vide des combles, la création d’une salle de  répétition et de locaux de services.</p>
+				</div>
+			</section>
+		</article>
+		<article id="galerie" class="content coursivethird">
+			<h2 class="gall">Quelques chiffres</h2>
+			<section id="menu-losange" class="menu ch-grid">
+				<div id="block1" class="block">
+					<div class="losange">
+						<img src="../img/coursive/Coursive22.jpg" alt="" />
+					</div>
+					<div  class="losange ch-item contour">
+						<div class="wrap-losange">
+							<h2>Places</h2>
+							<div class="ch-info">
+								<h3>400 places</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Architectes</h2>
+							<div class="ch-info">
+								<h3>ABP Architectes</h3>
+		                            <h3>et Gonfreville Dumet Vauletl</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="block2" class="block">
+					<div id="losange4" class="losange">
+						<img src="../img/coursive/Coursive4.jpg" alt="" />
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Surface</h2>
+							<div class="ch-info">
+								<h3>1000 m²</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/coursive/Coursive5.jpg" alt=""/>
+					</div>
+				</div>
+				<div id="block3" class="block">
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Date</h2>
+							<div class="ch-info">
+								<h3>Commande</h3>
+								<p>2004</p>
+								<h3>Durée du chantier</h3>
+								<p>2006 à 2008</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange contour ch-item ">
+						<div class="wrap-losange">
+							<h2>Coût</h2>
+							<div class="ch-info">
+								<h3>4 896 024 M € HT (valeur 2007)</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/coursive/Coursive3.jpg" alt=""/>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('.scroll a').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+    </script>
+</body>

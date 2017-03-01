@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" class="Exposition">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="Integration" content="width=device-width">
+	<title>Exposition</title>
+	<link rel="stylesheet" type="text/css" href="../style-rose.css" />
+</head>
+<body>
+	<div class="content">
+		<nav>
+			<ul class="scroll">
+				<li><a href="../index.html"><h3>Accueil</h3></a></li>
+				<li><a href="#presentation"><h3>Présentation</h3></a></li>
+				<li><a href="#informations"><h3>Infos</h3></a></li>
+				<li><a href="#galerie"><h3>Galerie</h3></a></li>
+			</ul>
+		</nav>
+		<article id="presentation" class="content hunepresentation">
+			<section class="title violine">
+				<div class="wrapper-title">
+					<h1>La Hune</h1>
+				</div>
+			</section>
+		</article>
+		<article id="informations" class="content huneinfo">
+			<section class="info">
+				<div class="wrapper">
+					<p>En configuration « spectacles », le volume est clos par des parois acoustiques assurant une isolation entre la salle et l’environnement extérieur. Le spectateur est dans une ambiance traditionnelle de salle de théâtre: éclairage tamisé, ambiance chaude de bois et de velours, scène en parquet encadrée par son jeu de rideaux. En configuration « banquets » : le gradin se replie, un rideau occulte le balcon, les panneaux coulissants s’ouvrent sur les déambulatoires qui donnent sur des jardins intérieurs fermés côté extérieur par des parois vitrées. Plusieurs positions sont possibles pour la scène, la piste de danse et les tables.</p>
+				</div>
+			</section>
+		</article>
+		<article id="galerie" class="content hunedata">
+			<h2 class="gall">Quelques chiffres</h2>
+			<section id="menu-losange" class="menu ch-grid">
+				<div id="block1" class="block">
+					<div class="losange">
+						<img src="../img/hune/hune1.jpg" alt="" />
+					</div>
+					<div  class="losange ch-item contour">
+						<div class="wrap-losange">
+							<h2>Places</h2>
+							<div class="ch-info">
+								<h3>800 places</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Maîtres d'ouvrage</h2>
+							<div class="ch-info">
+								<h3>Ville de Saint-Benoit</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="block2" class="block">
+					<div id="losange4" class="losange">
+						<img src="../img/hune/hune2.jpg" alt="" />
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Surface</h2>
+							<div class="ch-info">
+								<h3>2861 m2</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/hune/hune3.jpg" alt=""/>
+					</div>
+				</div>
+				<div id="block3" class="block">
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Date</h2>
+							<div class="ch-info">
+								<h3>Date de commande</h3>
+								<p>1996</p>
+								<h3>Date de début/fin</h3>
+								<p>1998/1999</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange contour ch-item">
+						<div class="wrap-losange">
+							<h2>Coût</h2>
+							<div class="ch-info">
+								<h3>Montant des travaux</h3>
+								<p>3 069 408 M € HT</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/hune/hune6.jpg" alt=""/>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('.scroll a').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+    </script>
+</body>

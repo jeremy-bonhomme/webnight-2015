@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr" class="Exposition">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="Integration" content="width=device-width">
+	<title>Exposition</title>
+	<link rel="stylesheet" type="text/css" href="../style-turquoise.css" />
+</head>
+<body>
+	<div class="content">
+		<nav>
+			<ul class="scroll">
+				<li><a href="../index.html"><h3>Accueil</h3></a></li>
+				<li><a href="#presentation"><h3>Présentation</h3></a></li>
+				<li><a href="#informations"><h3>Infos</h3></a></li>
+				<li><a href="#galerie"><h3>Galerie</h3></a></li>
+			</ul>
+		</nav>
+		<article id="presentation" class="content bocapolepres">
+			<section class="title violine">
+				<div class="wrapper-title">
+					<h1>Alauna 21</h1>
+					<h2>Théâtre de Secondigny</h2>
+				</div>
+			</section>
+		</article>
+		<article id="informations" class="content bocapoleinfo">
+			<section class="info">
+				<div class="wrapper">
+					<p>Cet ensemble constitue un élément fort, marquant la “porte de Bressuire”. L’architecture générale est fractionnée. Les volumes majeurs (Salle Polyvalente, Grande Halle et Auditorium) sont autonomes et identifiables avec leurs propres entrées et leur parvis. 
+		Les façades principales sont vitrées. Les façades latérales sont pleines en partie haute et percées en partie basse par  les sorties de secours logées entre les poteaux. 
+		Les poteaux sont en béton de ciment blanc. La partie basse est habillée de pierre.
+		Les façades arrières sont en béton blanc avec incorporation d’agrégats de pierre locale. Le coulage est fait par strates successives. Le parement est sablé pour dégager l’aspect naturel des agrégats. 
+		</p>
+				</div>
+			</section>
+		</article>
+		<article id="galerie" class="content bocapolegal">
+			<h2 class="gall">Quelques chiffres</h2>
+			<section id="menu-losange" class="menu ch-grid">
+				<div id="block1" class="block">
+					<div class="losange">
+						<img src="../img/bocapole/bocapole1.jpg" alt="" />
+					</div>
+					<div  class="losange ch-item contour">
+						<div class="wrap-losange">
+							<h2>Places</h2>
+							<div class="ch-info">
+								<h3>1400 places</h3>						
+							</div>
+						</div>
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Architectes</h2>
+							<div class="ch-info">
+								<h3>Hervé Beaudouin</h3>
+								<p>et</p>
+								<h3>Benoit Engel</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="block2" class="block">
+					<div id="losange4" class="losange">
+						<img src="../img/bocapole/bocapole5.jpg" alt="" />
+					</div>
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Surface</h2>
+							<div class="ch-info">
+								<h3>8900 mètres carré</h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/bocapole/bocapole3.jpg" alt=""/>
+					</div>
+				</div>
+				<div id="block3" class="block">
+					<div class="losange full ch-item">
+						<div class="wrap-losange">
+							<h2>Date</h2>
+							<div class="ch-info">
+								<h3>Date de début</h3>
+								<p>2003</p>
+								<h3>Date de fin</h3>
+								<p>2006</p>
+							</div>
+						</div>
+					</div>
+					<div class="losange contour ch-item">
+						<div class="wrap-losange">
+							<h2>Coût</h2>
+							<div class="ch-info">
+								<h3>6 992604 M € HT </h3>
+							</div>
+						</div>
+					</div>
+					<div class="losange">
+						<img src="../img/bocapole/bocapole2.jpg" alt=""/>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    	$('.scroll a').click( function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+        });
+    });
+    </script>
+</body>
